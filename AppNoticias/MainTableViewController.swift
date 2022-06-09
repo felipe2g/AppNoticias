@@ -9,20 +9,35 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    var items: Array = ["Felipe", "Guimarães", "iOS"]
+    var news: [ResultNews] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadNews()
+    }
+    
+    func loadNews() {
+        let fileUrl = Bundle.main.url(forResource: "file", withExtension: "json")!
+        let jsonData = try! Data(contentsOf: fileUrl)
+        
+        do {
+            let data = try JSONDecoder().decode(NewYorkNews.self, from: jsonData)
+            
+            news = data.results
+        } catch {
+            print(String(describing: error))
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        print("count => \(news.count)")
+        return news.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = items[indexPath.row]
+        cell.textLabel?.text = news[indexPath.row].title
         
         return cell
     }
