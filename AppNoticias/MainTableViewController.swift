@@ -21,7 +21,7 @@ class MainTableViewController: UITableViewController {
         let jsonData = try! Data(contentsOf: fileUrl)
         
         do {
-            let data = try JSONDecoder().decode(NewYorkNews.self, from: jsonData)
+            let data = try JSONDecoder().decode(ResponseNews.self, from: jsonData)
             
             news = data.results
         } catch {

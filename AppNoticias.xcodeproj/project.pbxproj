@@ -14,7 +14,7 @@
 		323BC8AF2850E321009FC176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323BC8AE2850E321009FC176 /* Assets.xcassets */; };
 		323BC8B22850E321009FC176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BC8B02850E321009FC176 /* LaunchScreen.storyboard */; };
 		32FE42B22852224700E2FC26 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = 32FE42B12852224700E2FC26 /* file.json */; };
-		32FE42B52852229A00E2FC26 /* NewYorkNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FE42B42852229A00E2FC26 /* NewYorkNews.swift */; };
+		32FE42B52852229A00E2FC26 /* ResponseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FE42B42852229A00E2FC26 /* ResponseNews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		323BC8B12850E321009FC176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		323BC8B32850E321009FC176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32FE42B12852224700E2FC26 /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
-		32FE42B42852229A00E2FC26 /* NewYorkNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkNews.swift; sourceTree = "<group>"; };
+		32FE42B42852229A00E2FC26 /* ResponseNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseNews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				323BC8B02850E321009FC176 /* LaunchScreen.storyboard */,
 				323BC8B32850E321009FC176 /* Info.plist */,
 				32FE42B12852224700E2FC26 /* file.json */,
-				32FE42B42852229A00E2FC26 /* NewYorkNews.swift */,
+				32FE42B42852229A00E2FC26 /* ResponseNews.swift */,
 			);
 			path = AppNoticias;
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				323BC8AA2850E321009FC176 /* MainTableViewController.swift in Sources */,
-				32FE42B52852229A00E2FC26 /* NewYorkNews.swift in Sources */,
+				32FE42B52852229A00E2FC26 /* ResponseNews.swift in Sources */,
 				323BC8A62850E321009FC176 /* AppDelegate.swift in Sources */,
 				323BC8A82850E321009FC176 /* SceneDelegate.swift in Sources */,
 			);

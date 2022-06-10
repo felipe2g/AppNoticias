@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - NewYorkNews
-struct NewYorkNews: Codable {
+struct ResponseNews: Codable {
     let status, copyright: String
     let numResults: Int
     let results: [ResultNews]
