@@ -9,7 +9,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    var news: [ResultNews] = []
+    var news: [Result] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class MainTableViewController: UITableViewController {
             
             news = data.results
         } catch {
-            print(String(describing: error))
+            print("error ==> \(String(describing: error))")
         }
     }
     
