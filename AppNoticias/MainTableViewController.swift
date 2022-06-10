@@ -35,9 +35,10 @@ class MainTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewYorkTableViewCell
         
-        cell.textLabel?.text = news[indexPath.row].title
+        let newsData = news[indexPath.row]
+        cell.prepare(with: newsData)
         
         return cell
     }
