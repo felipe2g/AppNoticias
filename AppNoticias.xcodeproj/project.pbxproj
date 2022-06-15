@@ -62,18 +62,42 @@
 		323BC8A42850E321009FC176 /* AppNoticias */ = {
 			isa = PBXGroup;
 			children = (
+				325B2D86285A1A9200FAF8AC /* Controller */,
+				325B2D85285A1A8C00FAF8AC /* View */,
+				325B2D84285A1A8200FAF8AC /* Model */,
+				323BC8AE2850E321009FC176 /* Assets.xcassets */,
+				323BC8B32850E321009FC176 /* Info.plist */,
+			);
+			path = AppNoticias;
+			sourceTree = "<group>";
+		};
+		325B2D84285A1A8200FAF8AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32FE42B12852224700E2FC26 /* file.json */,
+				32FE42B42852229A00E2FC26 /* ResponseNews.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		325B2D85285A1A8C00FAF8AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				323BC8B02850E321009FC176 /* LaunchScreen.storyboard */,
+				323BC8AB2850E321009FC176 /* Main.storyboard */,
+				32FE42B9285381E400E2FC26 /* NewYorkTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		325B2D86285A1A9200FAF8AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				323BC8A52850E321009FC176 /* AppDelegate.swift */,
 				323BC8A72850E321009FC176 /* SceneDelegate.swift */,
 				323BC8A92850E321009FC176 /* MainTableViewController.swift */,
-				323BC8AB2850E321009FC176 /* Main.storyboard */,
-				323BC8AE2850E321009FC176 /* Assets.xcassets */,
-				323BC8B02850E321009FC176 /* LaunchScreen.storyboard */,
-				323BC8B32850E321009FC176 /* Info.plist */,
-				32FE42B12852224700E2FC26 /* file.json */,
-				32FE42B42852229A00E2FC26 /* ResponseNews.swift */,
-				32FE42B9285381E400E2FC26 /* NewYorkTableViewCell.swift */,
 			);
-			path = AppNoticias;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
