@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322557892860A617005FC412 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322557882860A617005FC412 /* LoginViewController.swift */; };
 		323BC8A62850E321009FC176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BC8A52850E321009FC176 /* AppDelegate.swift */; };
 		323BC8A82850E321009FC176 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BC8A72850E321009FC176 /* SceneDelegate.swift */; };
 		323BC8AA2850E321009FC176 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BC8A92850E321009FC176 /* MainTableViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322557882860A617005FC412 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		323BC8A22850E321009FC176 /* AppNoticias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNoticias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323BC8A52850E321009FC176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		323BC8A72850E321009FC176 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				323BC8A52850E321009FC176 /* AppDelegate.swift */,
 				323BC8A72850E321009FC176 /* SceneDelegate.swift */,
 				323BC8A92850E321009FC176 /* MainTableViewController.swift */,
+				322557882860A617005FC412 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322557892860A617005FC412 /* LoginViewController.swift in Sources */,
 				323BC8AA2850E321009FC176 /* MainTableViewController.swift in Sources */,
 				32FE42B52852229A00E2FC26 /* ResponseNews.swift in Sources */,
 				323BC8A62850E321009FC176 /* AppDelegate.swift in Sources */,
