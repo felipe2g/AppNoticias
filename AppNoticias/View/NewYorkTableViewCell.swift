@@ -26,7 +26,7 @@ class NewYorkTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func prepare(with news: Result) {
+    func prepare(with news: ResultNews) {
         title.text = news.title
         by.text = news.byline
         imageNews.image = UIImage(named: "17malcolmx-mediumThreeByTwo440-v2")

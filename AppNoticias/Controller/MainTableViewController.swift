@@ -9,7 +9,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    var news: [Result] = []
+    var news: [ResultNews] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
