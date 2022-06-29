@@ -10,10 +10,12 @@ import UIKit
 class MainTableViewController: UITableViewController {
     
     var resultNews: [NewsData] = []
+    var activityView: UIActivityIndicatorView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.showActivityIndicator()
         NetworkManager.shared.getNews{ [weak self] result in
             guard let self = self else { return }
             
@@ -28,9 +30,11 @@ class MainTableViewController: UITableViewController {
                 // É importante que o reload aconteça na main thread pois o reloadData recarrega o UI
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                    self.hideActivityIndicator()
                 }
             case .failure(let error):
                 print("error: \(error)")
+                self.hideActivityIndicator()
             }
         }
     }
@@ -53,6 +57,34 @@ class MainTableViewController: UITableViewController {
         if let url = URL(string: resultNews[indexPath.row].url) {
             UIApplication.shared.open(url)
         }
+    }
+    
+    func showActivityIndicator() {
+        activityView = UIActivityIndicatorView(style: .large)
+        guard let activityView = activityView else {
+            return
+        }
+        
+        self.view.addSubview(activityView)
+        
+        activityView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            activityView.widthAnchor.constraint(equalToConstant: 70),
+            activityView.heightAnchor.constraint(equalToConstant: 70),
+            activityView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            activityView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        ])
+        
+        activityView.startAnimating()
+    }
+    
+    func hideActivityIndicator() {
+        guard let activityView = activityView else {
+            return
+        }
+        
+        activityView.stopAnimating()
     }
 }
 
