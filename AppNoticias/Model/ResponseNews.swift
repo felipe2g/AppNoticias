@@ -4,7 +4,7 @@ import Foundation
 struct ResponseNews: Codable {
     let status, copyright: String
     let numResults: Int
-    let results: [Result]
+    let results: [ResultNews]
 
     enum CodingKeys: String, CodingKey {
         case status, copyright
@@ -14,7 +14,7 @@ struct ResponseNews: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct ResultNews: Codable {
     let uri: String
     let url: String
     let id, assetID: Int
