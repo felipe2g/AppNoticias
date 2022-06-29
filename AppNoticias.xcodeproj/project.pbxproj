@@ -16,7 +16,6 @@
 		323BC8B22850E321009FC176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BC8B02850E321009FC176 /* LaunchScreen.storyboard */; };
 		32FD80DE286CCE1000D71D8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD80DD286CCE1000D71D8D /* NetworkManager.swift */; };
 		32FD80E1286CD3DB00D71D8D /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD80E0286CD3DB00D71D8D /* NewsData.swift */; };
-		32FE42B22852224700E2FC26 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = 32FE42B12852224700E2FC26 /* file.json */; };
 		32FE42B52852229A00E2FC26 /* ResponseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FE42B42852229A00E2FC26 /* ResponseNews.swift */; };
 		32FE42BA285381E400E2FC26 /* NewYorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FE42B9285381E400E2FC26 /* NewYorkTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		323BC8B32850E321009FC176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32FD80DD286CCE1000D71D8D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		32FD80E0286CD3DB00D71D8D /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
-		32FE42B12852224700E2FC26 /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
 		32FE42B42852229A00E2FC26 /* ResponseNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseNews.swift; sourceTree = "<group>"; };
 		32FE42B9285381E400E2FC26 /* NewYorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +78,6 @@
 		325B2D84285A1A8200FAF8AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				32FE42B12852224700E2FC26 /* file.json */,
 				32FE42B42852229A00E2FC26 /* ResponseNews.swift */,
 				32FD80DD286CCE1000D71D8D /* NetworkManager.swift */,
 				32FD80E0286CD3DB00D71D8D /* NewsData.swift */,
@@ -167,7 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				323BC8B22850E321009FC176 /* LaunchScreen.storyboard in Resources */,
-				32FE42B22852224700E2FC26 /* file.json in Resources */,
 				323BC8AF2850E321009FC176 /* Assets.xcassets in Resources */,
 				323BC8AD2850E321009FC176 /* Main.storyboard in Resources */,
 			);
